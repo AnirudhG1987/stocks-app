@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Charts</title>
+</head>
+<body>
+
+        <label for="id_ticker">Ticker:</label>
+        <input type="text" name="ticker" required id="id_ticker">
+
+        <label for="id_amount">Amount:</label>
+        <input type="text" name="amount" required id="id_amount">
+        <label for="sip">SIP Freq:</label>
+          <select name="frequency" id="sip">
+            <option value=1>Monthly</option>
+            <option value=3>Quarterly</option>
+            <option value=6>Semi Annual</option>
+            <option value=12>Annual</option>
+          </select>
+        <label for="period">Range in Years:</label>
+          <input type="text" name="ticker" required id="period">
+
+        <input id="chart_submit" type="submit" name="Calculate" value="Calculate" />
+
+        <!--div id="shareChart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div-->
+        <div id="sipChart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.stock.min.js"></script>
+         <script src="{% static 'js/ajax_script.js' %}"></script>
+        <script src="{% static 'js/functions.js' %}"></script>
+
+
+
+
+
+</body>
+</html>
