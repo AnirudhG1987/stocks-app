@@ -6,6 +6,7 @@ from yfinance import shared
 from sympy import symbols, solve
 import pandas as pd
 import requests
+import numpy as np
 import io
 
 def getSNP500stocklist():
@@ -155,15 +156,41 @@ def getstockdata(ticker,period,freq):
     return tsla_df['Close']
 
 def getstockdatarange(ticker,start, end,freq):
-    tsla_df = yf.download(tickers = ticker, start=start+"-01-01",end=end+"-12-31",interval = str(freq)+"mo")
-    tsla_df.dropna(subset = ['Close'], inplace=True)
-    #print(tsla_df)
-    if ticker in shared._ERRORS.keys():
-        error_message = shared._ERRORS[ticker]
+    try:
+        tsla_df = yf.download(tickers = ticker, start=start+"-01-01",
+                              end=end+"-12-31",interval = str(freq)+"mo")
+    except:
+        print("we are here")
+    tsla_df.dropna(inplace=True)
+    if (len(ticker)==1):
+        tsla_df = tsla_df['Close'].to_frame()
+        tsla_df.columns = [ticker[0]]
+        return tsla_df
     else:
-        error_message =''
-    return tsla_df['Close'], error_message
+        return tsla_df['Close']
 
+def getstockportfoliodata(amount,ticker,start,end,freq):
+    multiple_stock_data = getstockdatarange(ticker,start,end,freq)
+    if len(multiple_stock_data) == 0:
+        return multiple_stock_data
+    dates_data = np.datetime_as_string(multiple_stock_data.index.values, unit='D')
+    investment = [amount*(i+1) for i in range(len(dates_data))]
+    stocks_portfolio = []
+    excel_data = pd.DataFrame({'Dates':dates_data})
+    excel_data['Investment'] = investment
+    for stock in multiple_stock_data.columns:
+        stock_data = multiple_stock_data[stock]
+        no_of_shares = []
+        portfolio = []
+        no_of_shares.append(round(amount / stock_data[0], 2))
+        portfolio.append(round(no_of_shares[-1] * stock_data[0], 2))
+        for i in range(1, len(dates_data)):
+            no_of_shares.append(round(amount / stock_data[i] + no_of_shares[-1], 2))
+            portfolio.append(round(no_of_shares[-1] * stock_data[i], 2))
+        stocks_portfolio.append(portfolio)
+        excel_data[stock+' Shares']=no_of_shares
+        excel_data[stock + ' Portfolio'] = portfolio
+    return excel_data
 
 def cagr(amount, networth, years):
     x = symbols('x')

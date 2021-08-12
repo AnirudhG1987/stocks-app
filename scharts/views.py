@@ -13,45 +13,31 @@ def index(request):
 
 @csrf_exempt
 def chartview(request):
-    stock_data=[]
-    no_of_shares = []
-    investment = []
-    excel_data = []
-    failure_msg = ''
+    error_message = ''
     if request.method == 'POST':
         tickers = request.POST['ticker'].split(',')
         amount = int(request.POST['amount'])
         freq = int(request.POST['freq'])
         start_year = request.POST['start_period']
         end_year = request.POST['end_period']
-        stock_data, error_message = getstockdatarange(tickers,start_year,end_year,freq)
-        portfolio = []
-        if stock_data.empty:
+        excel_data_df = getstockportfoliodata(amount,tickers,start_year,end_year,freq)
+        if len(excel_data_df) == 0:
             return JsonResponse({
-                'error_message': error_message
+                'error_message': "No Data. Check Ticker date range"
             })
 
 
-        dates_data = np.datetime_as_string(stock_data.index.values, unit='D')
-        investment.append(amount)
-        no_of_shares.append(round(amount / stock_data[0],2))
-        portfolio.append(round(no_of_shares[-1] * stock_data[0],2))
-        for i in range(1,len(stock_data)):
-            investment.append(amount + investment[-1])
-            no_of_shares.append(round(amount / stock_data[i] + no_of_shares[-1], 2))
-            portfolio.append(round(no_of_shares[-1] * stock_data[i],2))
-
-        excel_data = [[dates_data[i], "{0:,.2f}".format(stock_data[i]), "{0:,.2f}".format(investment[i]),
-                        no_of_shares[i], "{0:,.2f}".format(portfolio[i])] for i in range(len(investment))]
-        excel_data.insert(0, ["Dates", "Share Price",  "Investment","Shares", "Networth"])
-        #stock_return = cagr(float(amount),float(portfolio[-1]),int(period))
-        #print(stock_return)
+    excel_data_list = excel_data_df.values.tolist()
+    excel_data_list.insert(0,list(excel_data_df.columns))
+    chart_column_list = ['Dates','Investment']
+    chart_column_list.extend([stock+" Portfolio" for stock in tickers])#.append('Investment'))
+    chart_data_df = excel_data_df[chart_column_list]
+    chart_data_list = chart_data_df.values.tolist()
+    chart_data_list.insert(0, list(chart_data_df.columns))
+    #print(chart_data_list)
     return JsonResponse({
         'error_message': error_message,
-        'stock_data': stock_data.values.round().tolist(),
-        'dates_data': dates_data.tolist(),
-        'investment': investment,
-        'portfolio': portfolio,
-        'excel_data': excel_data,
+        'chart_data': chart_data_list,
+        'excel_data': excel_data_list,
     })
 

@@ -32,95 +32,6 @@ function display(data) {
                 }
 }
 
-function portfoliochart(chartName,title,dates,investment,portfolio,stock_data,stock_return){
-
-        var dataList = []
-
-        var chart = new CanvasJS.StockChart(chartName,{
-        title:{
-          text:title
-        },
-        subtitles:[{
-            text: Math.round(portfolio[portfolio.length-1]/investment[investment.length-1])+"X"
-        },
-        {
-            text: stock_return+"%"
-        }],
-        animationEnabled: true,
-        rangeSelector: {
-            enabled: false
-        },
-        navigator: {
-            enabled: false
-        },
-        exportEnabled: true,
-        charts: [{
-          axisX: {
-            valueFormatString: "MM YYYY",
-            title: "Year",
-            crosshair: {
-              enabled: true,
-              snapToDataPoint: true
-            }
-          },
-          axisY2: {
-            prefix: "$",
-            title: "stock price",
-          },
-          axisY: {
-            title: title,
-            valueFormatString: "$#,##0.00",
-            crosshair: {
-              enabled: true,
-              snapToDataPoint: true,
-                labelFormatter: function(e) {
-                    return "$" + CanvasJS.formatNumber(e.value, "#,##0.00");
-                }
-              //snapToDataPoint: true
-            }
-          },
-          data: dataList
-        }],
-
-      });
-
-
-
-    function addData(xval,data, name, secondary ) {
-        var dataSeries = {type: "spline"}
-        if (secondary){
-            dataSeries.axisYType = "secondary"
-        }
-        dataSeries.showInLegend =  true
-        dataSeries.name = name
-
-        var dataPoints = [];
-        for (var i = 0; i < data.length; i++) {
-            dataPoints.push({
-                x: new Date(xval[i]),
-                //x: xval[i],
-                y: data[i]
-            });
-        }
-        dataSeries.dataPoints = dataPoints
-        dataList.push(dataSeries);
-    }
-
-    function toggleDataSeries(e) {
-        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-            e.dataSeries.visible = false;
-        } else {
-            e.dataSeries.visible = true;
-        }
-        e.chart.render();
-    }
-    addData(dates,investment, "investment",false);
-    addData(dates,portfolio,"portfolio",false);
-    addData(dates,stock_data,"stock price",true);
-    chart.render();
-
-
-}
 
 function stockchart(chartName,title,dates, data){
         var dps1 = [], dps2= [];
@@ -194,6 +105,87 @@ function stockchart(chartName,title,dates, data){
     console.log(dps1);
 
     stockChart.render();
+}
+
+function portfoliochart(chartName,chart_data){
+        title = "Investment"
+        stock_return = "0"
+        var dataList = []
+
+        var chart = new CanvasJS.StockChart(chartName,{
+        title:{
+          text:title
+        },
+        //subtitles:[{
+        //    text: "we will fill this later"
+        //},
+        //{
+        //    text: stock_return+"%"
+        //}],
+        animationEnabled: true,
+        rangeSelector: {
+            enabled: false
+        },
+        navigator: {
+            enabled: false
+        },
+        exportEnabled: true,
+        charts: [{
+          axisX: {
+            valueFormatString: "MM YYYY",
+            title: "Year",
+            crosshair: {
+              enabled: true,
+              snapToDataPoint: true
+            }
+          },
+          axisY: {
+            title: title,
+            valueFormatString: "$#,##0.00",
+            crosshair: {
+              enabled: true,
+              snapToDataPoint: true,
+                labelFormatter: function(e) {
+                    return "$" + CanvasJS.formatNumber(e.value, "#,##0.00");
+                }
+              //snapToDataPoint: true
+            }
+          },
+          data: dataList
+        }],
+
+      });
+
+
+
+  function toggleDataSeries(e) {
+        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+            e.dataSeries.visible = false;
+        } else {
+            e.dataSeries.visible = true;
+        }
+        e.chart.render();
+    }
+    for (var i=0;i<chart_data[0].length;i++){
+        var dataSeries = {type: "spline"}
+        dataSeries.showInLegend =  true
+        dataSeries.name = chart_data[0][i]
+
+        var dataPoints = [];
+        for (var j = 1; j < chart_data.length; j++) {
+            dataPoints.push({
+                x: new Date(chart_data[j][0]),
+                y: chart_data[j][i]
+            });
+        }
+        dataSeries.dataPoints = dataPoints
+        dataList.push(dataSeries);
+
+    }
+    //addData(dates,portfolio,"portfolio");
+    chart.render();
+
+
 }
 
 

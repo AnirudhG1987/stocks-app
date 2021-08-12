@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scharts/stocksdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/scharts/stocksdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scharts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/scharts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/ajax_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/ajax_script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/functions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628417249958</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Works for single stocks perfectly">
+      <created>1628417535139</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1628417535139</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -86,29 +97,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="Works for single stocks perfectly" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1628417249718">
+    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1628417534989">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1628417249718" />
+    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1628417534989" />
     <state x="0" y="190" key="IDE.errors.dialog" timestamp="1628411053411">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="190" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1628411053411" />
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1628417257007">
+    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1628417537771">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1628417257007" />
-    <state x="375" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1627841433154">
+    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1628417537771" />
+    <state x="375" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1628709560187">
       <screen x="0" y="25" width="1440" height="822" />
     </state>
-    <state x="375" y="267" key="com.intellij.ide.util.TipDialog/0.25.1440.822@0.25.1440.822" timestamp="1627841433154" />
-    <state x="374" y="70" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1628150332028">
+    <state x="375" y="267" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1628660858947" />
+    <state x="375" y="267" key="com.intellij.ide.util.TipDialog/0.25.1440.822@0.25.1440.822" timestamp="1628709560187" />
+    <state x="374" y="70" width="620" height="759" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1628671616939">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="374" y="70" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1628150332028" />
-    <state x="648" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1627576903301">
+    <state x="374" y="70" width="620" height="759" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1628671616939" />
+    <state x="505" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628677589865">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="648" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1627576903301" />
+    <state x="505" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1628677589865" />
+    <state x="648" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1628669932260">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="648" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1628669932260" />
   </component>
 </project>
