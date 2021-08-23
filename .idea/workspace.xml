@@ -5,8 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scharts/stocksdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/scharts/stocksdata.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scharts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/scharts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/ajax_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/ajax_script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +41,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/csv" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -88,27 +92,40 @@
       <option name="project" value="LOCAL" />
       <updated>1628417535139</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Multiple Stocks done">
+      <created>1628753386143</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1628753386143</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial launch" />
     <MESSAGE value="Works for single stocks perfectly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Works for single stocks perfectly" />
+    <MESSAGE value="Multiple Stocks done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multiple Stocks done" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1628417534989">
+    <state x="56" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629705251021">
+      <screen x="0" y="25" width="1440" height="823" />
+    </state>
+    <state x="56" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.823@0.25.1440.823" timestamp="1629705251021" />
+    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1628753385982">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1628417534989" />
-    <state x="0" y="190" key="IDE.errors.dialog" timestamp="1628411053411">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1628753385982" />
+    <state x="0" y="199" key="IDE.errors.dialog" timestamp="1629705081595">
+      <screen x="0" y="25" width="1440" height="825" />
     </state>
     <state x="0" y="190" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1628411053411" />
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1628417537771">
+    <state x="0" y="199" key="IDE.errors.dialog/0.25.1440.825@0.25.1440.825" timestamp="1629705081595" />
+    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1628753389218">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1628417537771" />
+    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1628753389218" />
     <state x="375" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1628709560187">
       <screen x="0" y="25" width="1440" height="822" />
     </state>

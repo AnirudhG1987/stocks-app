@@ -1,8 +1,7 @@
-import ast
+import json
 from datetime import datetime
 
 import yfinance as yf
-from yfinance import shared
 from sympy import symbols, solve
 import pandas as pd
 import requests
@@ -174,22 +173,47 @@ def getstockportfoliodata(amount,ticker,start,end,freq):
     if len(multiple_stock_data) == 0:
         return multiple_stock_data
     dates_data = np.datetime_as_string(multiple_stock_data.index.values, unit='D')
+    ts = pd.to_datetime(multiple_stock_data.index.values)
+    d = ts.strftime('%Y-%m')
+    #dates_data = [date.strptime( '%Y-%m') for date in multiple_stock_data.index.values]
+    dates_data = d.values
+    #dates_data.index = pd.to_datetime(dates_data.index, format='%Y-%m-%d')
+    #dates_data.index = dates_data.index.strftime('%Y-%m')
     investment = [amount*(i+1) for i in range(len(dates_data))]
-    stocks_portfolio = []
+    #stocks_portfolio = []
     excel_data = pd.DataFrame({'Dates':dates_data})
     excel_data['Investment'] = investment
     for stock in multiple_stock_data.columns:
+        ticker_yf = yf.Ticker(stock)
+        dividends_df = ticker_yf.dividends
+        dividends_df.index = pd.to_datetime(dividends_df.index, format='%Y-%m-%d')
+        dividends_df.index = dividends_df.index.strftime('%Y-%m')
         stock_data = multiple_stock_data[stock]
         no_of_shares = []
+        no_of_shares_nd = []
+        dividends_list = []
         portfolio = []
+        portfolio_nd = []
         no_of_shares.append(round(amount / stock_data[0], 2))
+        no_of_shares_nd.append(round(amount / stock_data[0], 2))
         portfolio.append(round(no_of_shares[-1] * stock_data[0], 2))
+        portfolio_nd.append(round(no_of_shares[-1] * stock_data[0], 2))
+        dividends_list.append(0)
         for i in range(1, len(dates_data)):
-            no_of_shares.append(round(amount / stock_data[i] + no_of_shares[-1], 2))
+            dividend_amount =0
+            if dates_data[i] in dividends_df.index:
+                dividend_amount = dividends_df.loc[dates_data[i]]*no_of_shares[-1]
+            dividends_list.append(dividend_amount)
+            no_of_shares.append(round((amount+dividend_amount) / stock_data[i] + no_of_shares[-1], 2))
+            no_of_shares_nd.append(round((amount) / stock_data[i] + no_of_shares_nd[-1], 2))
+            portfolio_nd.append(round(no_of_shares_nd[-1] * stock_data[i], 2))
             portfolio.append(round(no_of_shares[-1] * stock_data[i], 2))
-        stocks_portfolio.append(portfolio)
+        #stocks_portfolio.append(portfolio)
         excel_data[stock+' Shares']=no_of_shares
+        # put a check box for dividennds
+        #excel_data[stock + ' Portfolio ND']= portfolio_nd
         excel_data[stock + ' Portfolio'] = portfolio
+        #excel_data['Dividends'] = dividends_list
     return excel_data
 
 def cagr(amount, networth, years):
@@ -200,6 +224,5 @@ def cagr(amount, networth, years):
     for x in sol:
         if x>0:
             return x
-
 
 

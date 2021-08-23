@@ -2,8 +2,6 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from scharts.stocksdata import *
-import numpy as np
-import pandas as pd
 
 # Create your views here.
 
@@ -31,6 +29,8 @@ def chartview(request):
     excel_data_list.insert(0,list(excel_data_df.columns))
     chart_column_list = ['Dates','Investment']
     chart_column_list.extend([stock+" Portfolio" for stock in tickers])#.append('Investment'))
+    # put a check box for dividends.
+    #chart_column_list.extend([stock + " Portfolio ND" for stock in tickers])
     chart_data_df = excel_data_df[chart_column_list]
     chart_data_list = chart_data_df.values.tolist()
     chart_data_list.insert(0, list(chart_data_df.columns))
