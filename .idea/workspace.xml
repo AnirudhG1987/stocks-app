@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="Added CI">
+    <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629787583481</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added CI">
+      <created>1629788387688</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1629788387688</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -173,20 +180,20 @@
       <screen x="0" y="25" width="1440" height="823" />
     </state>
     <state x="56" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.823@0.25.1440.823" timestamp="1629705251021" />
-    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1629787711676">
+    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1629788387532">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1629787711676" />
+    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1629788387532" />
     <state x="0" y="52" key="CommitChangelistDialog2/0.25.1440.823@0.25.1440.823" timestamp="1629709126724" />
     <state x="0" y="199" key="IDE.errors.dialog" timestamp="1629705081595">
       <screen x="0" y="25" width="1440" height="825" />
     </state>
     <state x="0" y="190" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1628411053411" />
     <state x="0" y="199" key="IDE.errors.dialog/0.25.1440.825@0.25.1440.825" timestamp="1629705081595" />
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1629787586659">
+    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1629788389590">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1629787586659" />
+    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1629788389590" />
     <state x="0" y="197" key="Vcs.Push.Dialog.v2/0.25.1440.823@0.25.1440.823" timestamp="1629709128746" />
     <state x="375" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1628709560187">
       <screen x="0" y="25" width="1440" height="822" />
