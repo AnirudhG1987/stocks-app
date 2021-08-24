@@ -21,3 +21,4 @@ openpyxl
 gunicorn==20.0.4
 Django==3.2.3
 whitenoise==5.2.0
+yfinance==0.1.63
