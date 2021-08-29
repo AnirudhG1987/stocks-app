@@ -145,8 +145,11 @@ $('#ci_submit').on('click',function() {
 
 
                     }
-                    chart("chartContainer","Money",response.netw);
-                    chart("livchartContainer","Living",response.living);
+
+                    //chart("chartContainer","Money",response.netw_living,response.netw_noliving);
+                    // chart("livchartContainer","Living",response.living);
+                    portfoliochart("chartContainer","Net Worth",response.chart_data);
+                    portfoliochart("livchartContainer","Living",response.living);
                     display();
 
 

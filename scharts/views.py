@@ -34,6 +34,7 @@ def chartview(request):
     chart_data_df = excel_data_df[chart_column_list]
     chart_data_list = chart_data_df.values.tolist()
     chart_data_list.insert(0, list(chart_data_df.columns))
+
     #print(chart_data_list)
     return JsonResponse({
         'error_message': error_message,

@@ -102,14 +102,15 @@ function stockchart(chartName,title,dates, data){
 
 
     addData(dates,data);
-    console.log(dps1);
+    //console.log(dps1);
 
     stockChart.render();
 }
 
-function portfoliochart(chartName,chart_data){
-        title = "Investment"
-        stock_return = "0"
+function portfoliochart(chartName,title,chart_data){
+
+        title = title
+        //stock_return = "0"
         var dataList = []
 
         var chart = new CanvasJS.StockChart(chartName,{
@@ -148,7 +149,6 @@ function portfoliochart(chartName,chart_data){
                 labelFormatter: function(e) {
                     return "$" + CanvasJS.formatNumber(e.value, "#,##0.00");
                 }
-              //snapToDataPoint: true
             }
           },
           data: dataList
@@ -166,7 +166,7 @@ function portfoliochart(chartName,chart_data){
         }
         e.chart.render();
     }
-    for (var i=0;i<chart_data[0].length;i++){
+    for (var i=1;i<chart_data[0].length;i++){
         var dataSeries = {type: "spline"}
         dataSeries.showInLegend =  true
         dataSeries.name = chart_data[0][i]
@@ -182,6 +182,7 @@ function portfoliochart(chartName,chart_data){
         dataList.push(dataSeries);
 
     }
+
     //addData(dates,portfolio,"portfolio");
     chart.render();
 

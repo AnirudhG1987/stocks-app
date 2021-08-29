@@ -7,6 +7,7 @@ import requests
 import numpy as np
 import io
 
+
 def getSNP500stocklist():
     table = pd.read_html('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
     df = table[0]
@@ -65,12 +66,6 @@ def datadump():
 def revenuedump():
     ticker = yf.Ticker('TSLA')
     print(ticker.earnings)
-    #for stock in getSNP500stocklist()[0:1]:
-    #    ticker = yf.Ticker(stock)
-    #    print(ticker.earninTSLAgs)
-
-#revenuedump()
-#chutiya()
 
 def getrevenuegrowthforallstock(start_year,end_year):
     stock_df = pd.read_csv("templates/Stock_data_dump1.csv")

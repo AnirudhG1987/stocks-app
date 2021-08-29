@@ -16,7 +16,7 @@ $('#chart_submit').on('click',function() {
         success:  function(response){
 
                 if (response.error_message==""){
-                    portfoliochart("sipChart",response.chart_data);
+                    portfoliochart("sipChart","Stock Comparison",response.chart_data);
                     display(response.excel_data);
                 }
                 else{
