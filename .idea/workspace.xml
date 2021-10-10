@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ci_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/csv/Stock_data_dump1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/static/csv/Stock_data_dump1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/ajax_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/ajax_script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630222564662</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added CI">
+      <created>1633847850053</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1633847850053</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -216,10 +217,10 @@
       <screen x="0" y="25" width="1440" height="823" />
     </state>
     <state x="56" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.823@0.25.1440.823" timestamp="1629705251021" />
-    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1630222564497">
+    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1633847849212">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1630222564497" />
+    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1633847849212" />
     <state x="0" y="52" key="CommitChangelistDialog2/0.25.1440.823@0.25.1440.823" timestamp="1629709126724" />
     <state x="0" y="199" key="IDE.errors.dialog" timestamp="1629705081595">
       <screen x="0" y="25" width="1440" height="825" />
@@ -230,10 +231,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1630393531831" />
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1630222566361">
+    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1633847851581">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1630222566361" />
+    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1633847851581" />
     <state x="0" y="197" key="Vcs.Push.Dialog.v2/0.25.1440.823@0.25.1440.823" timestamp="1629709128746" />
     <state x="375" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1632284534173">
       <screen x="0" y="0" width="1440" height="900" />
