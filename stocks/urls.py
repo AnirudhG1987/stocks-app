@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('ci/',include('ci_app.urls')),
     path('charts/',include('scharts.urls')),
+    path('options/',include('options.urls')),
 ]

@@ -189,5 +189,79 @@ function portfoliochart(chartName,title,chart_data){
 
 }
 
+function optionchart(chartName,title,chart_data){
+
+        title = title
+        //stock_return = "0"
+        var dataList = []
+
+        var chart = new CanvasJS.StockChart(chartName,{
+        title:{
+          text:title
+        },
+        animationEnabled: true,
+        rangeSelector: {
+            enabled: false
+        },
+        navigator: {
+            enabled: false
+        },
+        exportEnabled: true,
+        charts: [{
+          axisX: {
+            valueFormatString: "$#,##0.00",
+            title: "Strike",
+            crosshair: {
+              enabled: true,
+              snapToDataPoint: true
+            }
+          },
+          axisY: {
+            title: title,
+            valueFormatString: "#,##0.00",
+            crosshair: {
+              enabled: true,
+              snapToDataPoint: true,
+                labelFormatter: function(e) {
+                    return "$" + CanvasJS.formatNumber(e.value, "#,##0.00");
+                }
+            }
+          },
+          data: dataList
+        }],
+
+      });
+
+
+
+  function toggleDataSeries(e) {
+        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+            e.dataSeries.visible = false;
+        } else {
+            e.dataSeries.visible = true;
+        }
+        e.chart.render();
+    }
+    for (var i=1;i<chart_data[0].length;i++){
+        var dataSeries = {type: "scatter"}
+        dataSeries.showInLegend =  true
+        dataSeries.name = chart_data[0][i]
+
+        var dataPoints = [];
+        for (var j = 1; j < chart_data.length; j++) {
+            dataPoints.push({
+                x: chart_data[j][0],
+                y: chart_data[j][i]
+            });
+        }
+        dataSeries.dataPoints = dataPoints
+        dataList.push(dataSeries);
+
+    }
+
+    chart.render();
+
+
+}
 
 
