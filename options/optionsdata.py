@@ -2,7 +2,6 @@ import yfinance as yf
 from datetime import date
 from datetime import datetime
 import pandas as pd
-import matplotlib.pyplot as plt
 import math
 
 
