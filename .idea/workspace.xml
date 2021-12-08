@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="Added CI">
+    <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/options/optionsdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/options/optionsdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scharts/stocksdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/scharts/stocksdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/csv/Stock_data_dump.csv" beforeDir="false" afterPath="$PROJECT_DIR$/scharts/Stock_data_dump.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/ajax_script.a809693f7c28.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/ajax_script.a809693f7c28.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/ajax_script.e5cbcad579bf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/ajax_script.e5cbcad579bf.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/ajax_script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/ajax_script.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/ci.3d996e20b60b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/ci.3d996e20b60b.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/ci.d4c7039e3b5a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/ci.d4c7039e3b5a.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/ci.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/ci.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/functions.b3a542b7d992.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/functions.b3a542b7d992.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/functions.b9cc0d7eafb8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/functions.b9cc0d7eafb8.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/js/functions.js.gz" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +58,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/static/js" />
-      <recent name="$PROJECT_DIR$/templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scharts" />
       <recent name="$PROJECT_DIR$/options" />
       <recent name="$PROJECT_DIR$/static/csv" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static/js" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -217,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633853883437</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added CI">
+      <created>1633854183315</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1633854183315</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -232,30 +260,34 @@
       <screen x="0" y="25" width="1440" height="823" />
     </state>
     <state x="56" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.823@0.25.1440.823" timestamp="1629705251021" />
-    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1633853895355">
+    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1633854183159">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1633853895355" />
+    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1633854183159" />
     <state x="0" y="52" key="CommitChangelistDialog2/0.25.1440.823@0.25.1440.823" timestamp="1629709126724" />
     <state x="0" y="199" key="IDE.errors.dialog" timestamp="1629705081595">
       <screen x="0" y="25" width="1440" height="825" />
     </state>
-    <state x="0" y="190" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1628411053411" />
     <state x="0" y="199" key="IDE.errors.dialog/0.25.1440.825@0.25.1440.825" timestamp="1629705081595" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1630393531831">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1630393531831" />
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1633853903937">
+    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1633854341737">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1633853903937" />
+    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1633854341737" />
     <state x="0" y="197" key="Vcs.Push.Dialog.v2/0.25.1440.823@0.25.1440.823" timestamp="1629709128746" />
-    <state x="375" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1632284534173">
+    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1637644063003">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="375" y="267" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1632284534173" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1637644063003" />
+    <state x="375" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1637216530486">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="375" y="267" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1637216530486" />
     <state x="375" y="267" key="com.intellij.ide.util.TipDialog/0.25.1440.822@0.25.1440.822" timestamp="1628709560187" />
+    <state x="500" y="322" key="com.intellij.ide.util.TipDialog/0.25.1920.1002@0.25.1920.1002" timestamp="1636874612499" />
     <state x="374" y="70" width="620" height="759" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1628671616939">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

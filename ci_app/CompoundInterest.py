@@ -1,6 +1,7 @@
 
 def calculator(ci_script,ci_living,amount):
     ci_list = ci_script.split(';')
+    ci_living_list = ci_living.split(';')
 
     principal_noliving = []
     principal_living = []
@@ -9,7 +10,7 @@ def calculator(ci_script,ci_living,amount):
     principal_noliving.append(amount)
     living.append(0)
 
-    for ci_tenor in ci_list:
+    for ci_teno32rr in ci_list:
         tenor = int(ci_tenor.split(',')[0])
         rate = float(ci_tenor.split(',')[1])
         for i in range(tenor):

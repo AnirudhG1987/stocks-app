@@ -131,7 +131,7 @@ def get_ror_strike_per_spot_df(ticker,expiry,rate):
             # print(to_append)
             df_length = len(ror_spot_df)
             ror_spot_df.loc[df_length] = to_append
-    #print(ror_spot_df)
+
     for strike in strike_list:
         for spot in spot_list:
             option_cost = option_df.loc[option_df['strike']==strike]["lastPrice"].values[0]
@@ -140,7 +140,3 @@ def get_ror_strike_per_spot_df(ticker,expiry,rate):
 
     return ror_spot_df
 
-#print(get_ror_spot_per_expiry_df('TSLA',850,0.7))
-#print(get_ror_strike_per_spot_df('TSLA','2023-06-16'))
-#print(get_options_dataframe("TSLA",0.5))
-#get_ror_strike_per_expiry_df(get_options_dataframe('TSLA',0.5))

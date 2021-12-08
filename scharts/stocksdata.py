@@ -6,6 +6,8 @@ import pandas as pd
 import requests
 import numpy as np
 import io
+import os
+
 
 
 def getSNP500stocklist():
@@ -87,22 +89,29 @@ def getrevenuegrowthforallstock(start_year,end_year):
 
 
 def getreturnsforallstock(start_year,end_year):
-    stock_df = pd.read_csv("templates/Stock_data_dump1.csv")
+    stock_df = pd.read_csv(os.getcwd()+"/Stock_data_dump.csv")
+    print(stock_df)
     return_dict = {}
     df_date = stock_df['Date']
     for stock in stock_df.columns[1:]:
         #print(stock)
         df_stock = stock_df[stock]
+        #print(df_stock)
         first_loc = df_stock.first_valid_index()
         last_loc = df_stock.last_valid_index()
-        first_date = datetime.strptime(df_date.loc[first_loc], '%d/%m/%Y')
-        last_date = datetime.strptime(df_date.loc[last_loc], '%d/%m/%Y')
+        print(stock)
+        first_date = datetime.strptime(df_date.loc[first_loc], '%Y-%m-%d')
+        last_date = datetime.strptime(df_date.loc[last_loc], '%Y-%m-%d')
         first_stock_price = df_stock.loc[first_loc]
         last_stock_price = df_stock.loc[last_loc]
         return_dict[stock]=((last_stock_price/first_stock_price)**(365/(last_date-first_date).days)-1)*100
 
+    #print(return_dict)
     returns_df = pd.DataFrame(dict(sorted(return_dict.items(), key=lambda item: item[1], reverse=True)),index=[0])
     return returns_df.transpose()
+
+
+print(getreturnsforallstock(2011,2021))
 
 def getallstockdata():
     url = "https://pkgstore.datahub.io/core/nasdaq-listings/nasdaq-listed_csv/data/7665719fb51081ba0bd834fde71ce822" \
