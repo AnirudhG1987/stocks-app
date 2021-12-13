@@ -11,7 +11,7 @@ def calculator(ci_script,ci_living,amount):
     principal_living.append(amount)
     principal_noliving.append(amount)
     living.append(0)
-    print(ci_living_list)
+    #print(ci_living_list)
 
     for ci_tenor in ci_list:
         tenor = int(ci_tenor.split(',')[0])
@@ -27,8 +27,13 @@ def calculator(ci_script,ci_living,amount):
         living_rate = float(living_tenor.split(',')[1])
         for i in range(tenor):
             multiplier = multiplier*(1-living_rate/100)
-            principal_living[index] = principal_living[index] * multiplier
-            living.append(principal_living[index-1] * living_rate / (100-living_rate))
+            if index < len(principal_living):
+                principal_living[index] = principal_living[index] * multiplier
+                living.append(principal_living[index - 1] * living_rate / (100 - living_rate))
+            else:
+                principal_living.append(principal_living[-1] * (1-living_rate/100))
+                principal_noliving.append(principal_noliving[-1])
+                living.append(principal_living[-1] * living_rate/100)
             index+=1
     # if living expense is less than compounding expense years.
     for _ in range(index,len(principal_living)):
@@ -36,7 +41,7 @@ def calculator(ci_script,ci_living,amount):
         living.append(0)
     return principal_noliving, principal_living,living
 
-#x, y, z = calculator("5,50;5,20","9,2",1000)
+#x, y, z = calculator("5,50;5,20","15,2",1000)
 #print(x)
 #print(y)
 #print(z)
