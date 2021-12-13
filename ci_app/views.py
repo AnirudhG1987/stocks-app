@@ -19,13 +19,13 @@ def myajaxtestview(request):
     excel_data=[]
     if request.method == 'POST':
         ci_script = request.POST['script']
-        if request.POST['living'] != '':
-            ci_living = int(request.POST['living'])
-        else:
-            ci_living = 0
+        ci_living = request.POST['living']
+        #print(ci_script)
+        #print(ci_living)
         amount = int(request.POST['amount'])
+        #print(amount)
         principal_noliving, principal_living, living = CompoundInterest.calculator(ci_script, ci_living, amount)
-        print(living)
+        #print(living)
         curr_year = date.today().year
         year = [curr_year+i for i in range(len(principal_living))]
         age = [curr_year-1987+i for i in range(len(principal_living))]

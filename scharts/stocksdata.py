@@ -61,13 +61,24 @@ def creatingdatabase():
 
 def datadump():
     data = yf.download(getSNP500stocklist(), start="2000-01-01", end="2021-12-31")['Close']
-    data.to_csv("templates/Stock_data_dump.csv")
+    data.to_csv(os.getcwd()+"/Stock_data_dump.csv")
 
 #datadump()
 
 def revenuedump():
-    ticker = yf.Ticker('TSLA')
-    print(ticker.earnings)
+
+    #data = yf.download(['AAPL'], start="2020-08-27", end="2021-12-31")['Close']
+    ticker = yf.Ticker('AAPL')
+    stock_split_df = ticker.actions
+    stock_split_df = stock_split_df[stock_split_df['Stock Splits'] != 0]
+    multiplier = 1
+    print(stock_split_df)
+    #for split_date in stock_split_df.index:
+    #    if  <= split_date:
+    #        multiplier = multiplier * stock_split_df.loc[split_date]['Stock Splits']
+
+#revenuedump()
+
 
 def getrevenuegrowthforallstock(start_year,end_year):
     stock_df = pd.read_csv("templates/Stock_data_dump1.csv")
@@ -90,28 +101,56 @@ def getrevenuegrowthforallstock(start_year,end_year):
 
 def getreturnsforallstock(start_year,end_year):
     stock_df = pd.read_csv(os.getcwd()+"/Stock_data_dump.csv")
-    print(stock_df)
+    #print(stock_df)
     return_dict = {}
     df_date = stock_df['Date']
+    new_return_dict = {}
+    new_return_dict['Ticker']=list(stock_df.columns[1:].values)
+    #print(new_return_dict)
+    years_list = []
+    bagger_list = []
+    returns_list = []
     for stock in stock_df.columns[1:]:
-        #print(stock)
+
         df_stock = stock_df[stock]
-        #print(df_stock)
         first_loc = df_stock.first_valid_index()
         last_loc = df_stock.last_valid_index()
-        print(stock)
-        first_date = datetime.strptime(df_date.loc[first_loc], '%Y-%m-%d')
-        last_date = datetime.strptime(df_date.loc[last_loc], '%Y-%m-%d')
+        first_date = datetime.strptime(df_date.loc[first_loc], '%d/%m/%Y')
+        last_date = datetime.strptime(df_date.loc[last_loc], '%d/%m/%Y')
         first_stock_price = df_stock.loc[first_loc]
-        last_stock_price = df_stock.loc[last_loc]
-        return_dict[stock]=((last_stock_price/first_stock_price)**(365/(last_date-first_date).days)-1)*100
+        ticker = yf.Ticker(stock)
+        stock_split_df = ticker.actions
+        stock_split_df = stock_split_df[stock_split_df['Stock Splits'] != 0]
+        multiplier = 1
+        for split_date in stock_split_df.index:
+            if first_date <= split_date:
+                multiplier = multiplier * stock_split_df.loc[split_date]['Stock Splits']
+        print(multiplier)
+        last_stock_price = df_stock.loc[last_loc]*multiplier
 
-    #print(return_dict)
-    returns_df = pd.DataFrame(dict(sorted(return_dict.items(), key=lambda item: item[1], reverse=True)),index=[0])
-    return returns_df.transpose()
+        years = (last_date-first_date).days/365
+        bagger = last_stock_price/first_stock_price
+        stock_return = ((bagger)**(1/years)-1)*100
+        years_list.append(years)
+        returns_list.append(stock_return)
+        return_dict[stock]= stock_return
+        bagger_list.append(bagger)
+
+    new_return_dict['years']=years_list
+    new_return_dict['returns'] = returns_list
+    new_return_dict['bagger'] = bagger_list
+    #print(new_return_dict)
+    sample_df = pd.DataFrame(new_return_dict)
+    sample_df.sort_values(by=['returns'],ascending=False)
+    #returns_df = pd.DataFrame(dict(sorted(return_dict.items(), key=lambda item: item[1], reverse=True)),index=[0])
+    #returns_df.transpose().to_csv(os.getcwd()+"/returns.csv")
+    #return returns_df.transpose()
+    sample_df.to_csv(os.getcwd()+"/returns.csv")
+    return sample_df
 
 
-print(getreturnsforallstock(2011,2021))
+#print(getreturnsforallstock(2011,2021))
+#print(yf.download(['TSLA'], start="2000-01-01", end="2021-12-31"))
 
 def getallstockdata():
     url = "https://pkgstore.datahub.io/core/nasdaq-listings/nasdaq-listed_csv/data/7665719fb51081ba0bd834fde71ce822" \
