@@ -4,6 +4,8 @@
     <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ci_app/CompoundInterest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ci_app/CompoundInterest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_app/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/ci_app/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ci_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639397235501</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added C_living with variable functionality">
+      <created>1639398441097</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1639398441097</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -255,18 +264,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1638961002246" />
-    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1639397234903">
+    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1639398440902">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1639397234903" />
+    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1639398440902" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1630393531831">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1630393531831" />
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1639397237994">
+    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1639398442953">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1639397237994" />
+    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1639398442953" />
     <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1637644063003">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

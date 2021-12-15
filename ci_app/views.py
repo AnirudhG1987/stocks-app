@@ -31,7 +31,7 @@ def myajaxtestview(request):
         age = [curr_year-1987+i for i in range(len(principal_living))]
         excel_data = [[age[i],year[i],"{0:,.2f}".format(principal_noliving[i]),"{0:,.2f}".format(principal_noliving[i]*3.673),
                        "{0:,.2f}".format(principal_living[i]),"{0:,.2f}".format(principal_living[i]*3.673),
-                       "{0:,.2f}".format(max(principal_living[i]-principal_living[i-1],0)),
+                       "{0:,.2f}".format(principal_living[i]-principal_living[i-1]),
                        "{0:,.2f}".format(living[i]),
                                          "{0:,.2f}".format(living[i]*3.673)] for i in range(len(principal_living))]
         excel_data.insert(0, ["Age","Year","Principal","Principal AED","Principal_Living",
