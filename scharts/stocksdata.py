@@ -17,6 +17,7 @@ def getSNP500stocklist():
     df.to_csv("S&P500-Symbols.csv", columns=['Symbol'])
     return df['Symbol'].tolist()
 
+#print(getSNP500stocklist())
 
 def getstockdata(tickers,date):
     Symbols = tickers
@@ -49,21 +50,26 @@ def getstockdata(tickers,date):
 
 def creatingdatabase():
     df_array = []
-    for i in range(2000,2022):
+    for i in range(2021,2022):
         #date = pd.date_range('1/1/'+str(i), '1/10/'+str(i), freq='BMS')[0]
         #print(date)
-        df_temp = getstockdata(getSNP500stocklist(), datetime.datetime(i,1,6))
-        print("year is ",i)
-        print(df_temp)
+        df_temp = getstockdata(getSNP500stocklist(), datetime(i,1,6))
+        #print("year is ",i)
+        #print(df_temp)
         if not df_temp.empty:
             df_array.append(df_temp.rename(columns = {'Close': i}))
     print(df_array)
 
+#creatingdatabase()
+
 def datadump():
-    data = yf.download(getSNP500stocklist(), start="2000-01-01", end="2021-12-31")['Close']
-    data.to_csv(os.getcwd()+"/Stock_data_dump.csv")
+    data = yf.download(getSNP500stocklist(), start="2021-01-01", end="2022-12-31")['Close']
+    print(data)
+    #data.to_csv(os.getcwd()+"/Stock_data_dump.csv")
 
 #datadump()
+
+
 
 def revenuedump():
 
