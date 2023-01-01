@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scharts/stocksdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/scharts/stocksdata.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639556631641</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added C_living with variable functionality">
+      <created>1672595493573</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1672595493573</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -264,41 +270,5 @@
     <MESSAGE value="Added CI" />
     <MESSAGE value="Added C_living with variable functionality" />
     <option name="LAST_COMMIT_MESSAGE" value="Added C_living with variable functionality" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="184" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642425396353">
-      <screen x="0" y="25" width="1440" height="822" />
-    </state>
-    <state x="184" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1638961002246" />
-    <state x="184" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.822@0.25.1440.822" timestamp="1642425396353" />
-    <state x="0" y="52" key="CommitChangelistDialog2" timestamp="1639556631123">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="0" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1639556631123" />
-    <state x="229" y="72" key="SettingsEditor" timestamp="1642061692472">
-      <screen x="0" y="25" width="1440" height="822" />
-    </state>
-    <state x="229" y="72" key="SettingsEditor/0.25.1440.822@0.25.1440.822" timestamp="1642061692472" />
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2" timestamp="1639556633881">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="0" y="188" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1639556633881" />
-    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1637644063003">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1637644063003" />
-    <state x="375" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1645700474403">
-      <screen x="0" y="25" width="1440" height="822" />
-    </state>
-    <state x="375" y="267" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1641965686491" />
-    <state x="375" y="269" key="com.intellij.ide.util.TipDialog/0.25.1440.822@0.25.1440.822" timestamp="1645700474403" />
-    <state x="505" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1638961004332">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="505" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1638961004332" />
-    <state x="385" y="171" width="670" height="676" key="search.everywhere.popup" timestamp="1642071418073">
-      <screen x="0" y="25" width="1440" height="822" />
-    </state>
-    <state x="385" y="171" width="670" height="676" key="search.everywhere.popup/0.25.1440.822@0.25.1440.822" timestamp="1642071418073" />
   </component>
 </project>
