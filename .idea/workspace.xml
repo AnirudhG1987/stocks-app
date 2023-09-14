@@ -6,6 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci_app/CompoundInterest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ci_app/CompoundInterest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/options/S&amp;P500-Info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scharts/S&amp;P500-Info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scharts/Stock_data_dump.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/csv/S&amp;P500-Info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/csv/Stock_data_dump.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/csv/S&amp;P500-Info.1ab510512a63.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/csv/S&amp;P500-Info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/csv/Stock_data_dump.4f823e357847.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/csv/Stock_data_dump.4f823e357847.csv.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/csv/Stock_data_dump.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/csv/Stock_data_dump.csv.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/csv/Stock_data_dump1.4215e8b9ac8d.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/csv/Stock_data_dump1.4215e8b9ac8d.csv.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,20 +54,23 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/anirudhgaddamanugu/Desktop/PycharmProjects/Stocks&quot;
   }
 }</component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/options" />
-      <recent name="$PROJECT_DIR$/static/csv" />
-      <recent name="$PROJECT_DIR$/scharts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/static/js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/margin_app" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/pdf" />
+      <recent name="$PROJECT_DIR$/static/img" />
+      <recent name="$PROJECT_DIR$/static/json" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -260,7 +281,35 @@
       <option name="project" value="LOCAL" />
       <updated>1672595493573</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Added C_living with variable functionality">
+      <created>1672600952819</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1672600952819</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added C_living with variable functionality">
+      <created>1672601001555</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1672601001555</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added C_living with variable functionality">
+      <created>1672601127377</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1672601127377</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Added C_living with variable functionality">
+      <created>1672601470155</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1672601470155</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

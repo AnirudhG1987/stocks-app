@@ -18,11 +18,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #print(os.path.abspath(__file__))
 TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-STATICFILES_DIRS = (
+STATIC_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
@@ -55,7 +56,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'stocks',
     'ci_app',
-    'options'
+    'options',
+    'tictactoe',
+    'worksheet',
+    'home',
+    'margin_app'
+    #'sudoku',
 ]
 
 MIDDLEWARE = [

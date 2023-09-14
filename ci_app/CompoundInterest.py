@@ -44,9 +44,6 @@ def calculator(ci_script,ci_living,amount):
             principal_living.append(principal_living[-1] * (1 + growth_rate_array[i] / 100) - living[-1] )
             living.append(living[-1])
 
-    print(principal_living)
-    print(living)
-    print(principal_noliving)
     return principal_noliving, principal_living,living
 
 #x, y, z = calculator("5,50","2,2;5,4",1000)

@@ -22,4 +22,10 @@ urlpatterns = [
     path('ci/',include('ci_app.urls')),
     path('charts/',include('scharts.urls')),
     path('options/',include('options.urls')),
+    path('tictactoe/', include('tictactoe.urls')),
+    path('worksheet/', include('worksheet.urls')),
+    path('', include('home.urls')),
+    path('margin/', include('margin_app.urls')),
+    #path('sudoku/', include('sudoku.urls')),
+
 ]
