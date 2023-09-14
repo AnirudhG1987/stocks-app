@@ -57,7 +57,7 @@ INSTALLED_APPS = [
     'stocks',
     'ci_app',
     'options',
-    'tictactoe',
+    #'tictactoe',
     'worksheet',
     'home',
     'margin_app'

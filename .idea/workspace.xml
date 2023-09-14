@@ -6,24 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci_app/CompoundInterest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ci_app/CompoundInterest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/options/S&amp;P500-Info.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scharts/S&amp;P500-Info.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scharts/Stock_data_dump.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/csv/S&amp;P500-Info.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/csv/Stock_data_dump.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/csv/S&amp;P500-Info.1ab510512a63.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/csv/S&amp;P500-Info.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/csv/Stock_data_dump.4f823e357847.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/csv/Stock_data_dump.4f823e357847.csv.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/csv/Stock_data_dump.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/csv/Stock_data_dump.csv.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/csv/Stock_data_dump1.4215e8b9ac8d.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/csv/Stock_data_dump1.4215e8b9ac8d.csv.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/stocks/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672601470155</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Added C_living with variable functionality">
+      <created>1694678709791</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1694678709791</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
