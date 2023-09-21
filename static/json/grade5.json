@@ -1,0 +1,1940 @@
+{
+  "Chapters":
+  {
+
+    "Shapes":
+    {
+      "Circle": {
+        "Description": "Find the missing values.",
+        "Easy": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 2,
+          "max": 20
+        }
+      },
+      "Square": {
+        "Description": "Find the missing values.",
+        "Easy": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 2,
+          "max": 20
+        }
+      },
+      "Rectangle": {
+        "Description": "a and b are the sides of a rectangle. Find the missing values.",
+        "Easy": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 2,
+          "max": 20
+        }
+      },
+      "Sphere": {
+        "Description": "Find the missing values.",
+        "Easy": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 2,
+          "max": 20
+        }
+      },
+      "Cube": {
+        "Description": "Find the missing values.",
+        "Easy": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 2,
+          "max": 20
+        }
+      },
+      "Cuboid": {
+        "Description": "a,b,c are the sides of a cuboid. Find the missing values.",
+        "Easy": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 2,
+          "max": 20
+        }
+      },
+      "Triangle": {
+        "Description": "Calculate Area using base and height. Find the missing values.",
+        "Easy": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 2,
+          "max": 20
+        }
+      },
+      "Trapezium": {
+        "Description": "Calculate Area using height and parallel sides (a & b). Find the missing values.",
+        "Easy": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 2,
+          "max": 20
+        }
+      },
+      "Cylinder": {
+        "Description": "Find the missing values.",
+        "Easy": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 2,
+          "max": 20
+        }
+      }
+    },
+
+
+
+    "Coordinate Geometry":
+    {
+      "Distance between two Points": {
+        "Description": "Find the distance between the two points below",
+        "Easy": {
+          "num_type": ["number"],
+          "operation": ["+"],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "num_type": ["number"],
+          "operation": ["+"],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "num_type": ["number"],
+          "operation": ["+"],
+          "noofsteps": 1
+
+        }
+      },
+      "Equation of Line joining two Points": {
+        "Description": "Find the equation of Line joining points A and B.",
+        "Easy": {
+          "num_type": ["number"],
+          "operation": ["+"],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "num_type": ["number"],
+          "operation": ["+"],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "num_type": ["number"],
+          "operation": ["+"],
+          "noofsteps": 1
+
+        }
+      },
+      "Slope between two Points": {
+      "Description": "Find the slope between points A and B.",
+        "Easy": {
+          "num_type": ["number"],
+          "operation": ["+"],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "num_type": ["number"],
+          "operation": ["+"],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        }
+      },
+      "Equation of Line point slope form": {
+        "Description": "Solve the following questions.",
+        "Easy": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        }
+      },
+      "Equation of Line point line form": {
+        "Description": "Solve the following questions.",
+        "Easy": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        }
+      },
+      "Point of intersection between two lines": {
+        "Description": "Find the point of intersection between lines L1 and L2.",
+        "Easy": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        }
+      },
+      "Equation of Perpendicular Bisector between two Points": {
+        "Description": "Find the equation of perpendicular bisector between points A and B.",
+        "Easy": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        }
+      },
+      "Distance of Point from Line": {
+        "Description": "Find the distance between points A and B.",
+        "Easy": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        }
+      },
+      "Midpoint of two points": {
+        "Description": "M is the midpoint of Point A and B. Find the missing point.",
+        "Easy": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "num_type": [
+            "number"
+          ],
+          "operation": [
+            "+"
+          ],
+          "noofsteps": 1
+        }
+      }
+
+    },
+
+    "Integration":
+    {
+      "Indefinite Integration of Polynomials":
+      {
+        "Easy":
+        {
+          "operation": ["+"],
+          "num_type": ["polynomial"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["+"],
+          "num_type": ["polynomial"],
+          "noofsteps": 2
+        },
+        "Hard":
+        {
+          "operation": ["+"],
+          "num_type": ["polynomial"],
+          "noofsteps": 4
+        }
+      },
+      "Definite Integration of Polynomials":
+      {
+        "Easy":
+        {
+          "operation": ["+"],
+          "num_type": ["polynomial"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["+"],
+          "num_type": ["polynomial"],
+          "noofsteps": 2
+        },
+        "Hard":
+        {
+          "operation": ["+"],
+          "num_type": ["polynomial"],
+          "noofsteps": 4
+        }
+      }
+    },
+
+    "Exponents":
+    {
+
+      "Indices Formulas":
+      {
+        "Description": "Simplify the following using exponents formula",
+        "Easy":
+        {
+          "operation": ["+"],
+          "num_type": ["polynomial"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["+"],
+          "num_type": ["polynomial"],
+          "noofsteps": 2
+        },
+        "Hard":
+        {
+          "operation": ["+"],
+          "num_type": ["polynomial"],
+          "noofsteps": 4
+        }
+      }
+    },
+
+
+    "Differentiation":
+    {
+      "Differentiation of Polynomials":
+      {
+        "Easy":
+        {
+          "operation": ["+"],
+          "num_type": ["polynomial"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["+"],
+          "num_type": ["polynomial"],
+          "noofsteps": 2
+        },
+        "Hard":
+        {
+          "operation": ["+"],
+          "num_type": ["polynomial"],
+          "noofsteps": 4
+        }
+      }
+    },
+
+    "Surds":
+    {
+      "Addition of Surds":
+      {
+        "Description": "Solve the following.",
+        "Easy":
+        {
+          "operation": ["+"],
+          "num_type": ["surd"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["+"],
+          "num_type": ["surd"],
+          "noofsteps": 2
+        },
+        "Hard":
+        {
+          "operation": ["+"],
+          "num_type": ["surd"],
+          "noofsteps": 4
+        }
+      },
+      "Subtraction of Surds":
+      {
+        "Description": "Solve the following.",
+        "Easy":
+        {
+          "operation": ["-"],
+          "num_type": ["surd"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["+","-"],
+          "num_type": ["surd"],
+          "noofsteps": 2
+        },
+        "Hard":
+        {
+          "operation": ["+","-"],
+          "num_type": ["surd"],
+          "noofsteps": 2
+        }
+      },
+      "Multiplication of Surds":
+      {
+        "Description": "Solve the following.",
+        "Easy":
+        {
+          "operation": ["*"],
+          "num_type": ["surd"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["*"],
+          "num_type": ["surd"],
+          "noofsteps": 2
+        },
+        "Hard":
+        {
+          "operation": ["*"],
+          "num_type": ["surd"],
+          "noofsteps": 4
+        }
+      },
+      "Division of Surds":
+      {
+        "Description": "Solve the following.",
+        "Easy":
+        {
+          "operation": ["/"],
+          "num_type": ["surd"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["/"],
+          "num_type": ["surd"],
+          "noofsteps": 1
+        },
+        "Hard":
+        {
+          "operation": ["/"],
+          "num_type": ["surd"],
+          "noofsteps": 1
+        }
+      }
+    },
+
+
+    "Complex Numbers":
+    {
+
+      "Addition of Complex Numbers":
+      {
+        "Easy":
+        {
+          "operation": ["+"],
+          "num_type": ["complex"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["+"],
+          "num_type": ["complex"],
+          "noofsteps": 2
+        },
+        "Hard":
+        {
+          "operation": ["+"],
+          "num_type": ["complex"],
+          "noofsteps": 4
+        }
+      },
+      "Subtraction of Complex Numbers":
+      {
+        "Easy":
+        {
+          "operation": ["-"],
+          "num_type": ["complex"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["+","-"],
+          "num_type": ["complex"],
+          "noofsteps": 2
+        },
+        "Hard":
+        {
+          "operation": ["+","-"],
+          "num_type": ["complex"],
+          "noofsteps": 2
+        }
+      },
+      "Multiplication of Complex Numbers":
+      {
+        "Easy":
+        {
+          "operation": ["*"],
+          "num_type": ["complex"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["*"],
+          "num_type": ["complex"],
+          "noofsteps": 2
+        },
+        "Hard":
+        {
+          "operation": ["*"],
+          "num_type": ["complex"],
+          "noofsteps": 4
+        }
+      },
+      "Division of Complex Numbers":
+      {
+        "Easy":
+        {
+          "operation": ["/"],
+          "num_type": ["complex"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["/"],
+          "num_type": ["complex"],
+          "noofsteps": 1
+        },
+        "Hard":
+        {
+          "operation": ["/"],
+          "num_type": ["complex"],
+          "noofsteps": 1
+        }
+      }
+    },
+
+    "Algebra": {
+      "Addition of Variables": {
+        "Description": "Solve the following",
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 4
+        }
+      },
+      "Linear Equations": {
+        "Description": "Solve the following Linear Equations.",
+        "Easy": {
+          "operation": [
+            "="
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "="
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "="
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 4
+        }
+      },
+      "Linear Inequality": {
+        "Description": "Solve the following Linear Inequalities.",
+        "Easy": {
+          "operation": [
+            "<",">",">=","<="
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "<",">",">=","<="
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "<",">",">=","<="
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 4
+        }
+      },
+      "Subtraction of Variables": {
+        "Description": "Solve the following",
+        "Easy": {
+          "operation": [
+            "-"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "-"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "operation": [
+            "-"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        }
+      },
+      "Expansion": {
+        "Description": "Solve the following",
+        "Easy": {
+          "operation": [
+            "*"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "*"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "operation": [
+            "*"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        }
+      },
+      "Division": {
+        "Description": "Solve the following.",
+        "Easy": {
+          "operation": [
+            "/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "operation": [
+            "/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        }
+      },
+      "System of Linear Equations": {
+        "Description": "Solve the following system of linear equations.",
+        "Easy": {
+          "operation": [
+            "/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "operation": [
+            "/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        }
+      },
+      "Quadratic Factorization": {
+        "Description": "Obtain the factorization for the following quardratic expressions.",
+        "Easy": {
+          "operation": [
+            "/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "operation": [
+            "/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        }
+      },
+      "Quadratic Equation": {
+        "Description": "Solve the following quadratic equations.",
+        "Easy": {
+          "operation": [
+            "="
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "="
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "operation": [
+            "="
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        }
+      },
+      "Quadratic Inequality": {
+        "Description": "Solve the following quadratic inequality.",
+        "Easy": {
+          "operation": [
+            "<",">",">=","<="
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "<",">",">=","<="
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        },
+        "Hard": {
+          "operation": [
+            "<",">",">=","<="
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 1
+        }
+      },
+
+      "Making Subject": {
+        "Description": "Changing subject of the formula.",
+        "Easy": {
+          "operation": [
+            "+","-","*","/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 2
+        },
+        "Medium": {
+          "operation": [
+            "+","-","*","/","**"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 3
+        },
+        "Hard": {
+          "operation": [
+            "+","-","*","/","**"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 5
+        }
+      },
+      "Substitution of values": {
+        "Description": "Evaluate the expression by substituting the values.",
+        "Easy": {
+          "operation": [
+            "+","-","*","/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 2
+        },
+        "Medium": {
+          "operation": [
+            "+","-","*","/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 3
+        },
+        "Hard": {
+          "operation": [
+            "+","-","*","/"
+          ],
+          "num_type": [
+            "polynomial"
+          ],
+          "noofsteps": 5
+        }
+      }
+    },
+
+    "Decimals":
+    {
+      "Addition of Decimals":
+      {
+        "Description": "Solve the following.",
+        "Easy":
+        {
+          "operation": ["+"],
+          "num_type": ["decimal"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["+"],
+          "num_type": ["decimal"],
+          "noofsteps": 2
+        },
+        "Hard":
+        {
+          "operation": ["+"],
+          "num_type": ["decimal"],
+          "noofsteps": 4
+        }
+      },
+      "Subtraction of Decimals":
+      {
+        "Description": "Solve the following.",
+        "Easy":
+        {
+          "operation": ["-"],
+          "num_type": ["decimal"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["+","-"],
+          "num_type": ["decimal"],
+          "noofsteps": 2
+        },
+        "Hard":
+        {
+          "operation": ["+","-"],
+          "num_type": ["decimal"],
+          "noofsteps": 4
+        }
+      },
+      "Multiplication of Decimals":
+      {
+        "Description": "Solve the following.",
+        "Easy":
+        {
+          "operation": ["*"],
+          "num_type": ["decimal"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["*"],
+          "num_type": ["decimal"],
+          "noofsteps": 1
+        },
+        "Hard":
+        {
+          "operation": ["*"],
+          "num_type": ["decimal"],
+          "noofsteps": 1
+        }
+      },
+      "Division of Decimals":
+      {
+        "Description": "Solve the following.",
+        "Easy":
+        {
+          "operation": ["/"],
+          "num_type": ["decimal"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["/"],
+          "num_type": ["decimal"],
+          "noofsteps": 1
+        },
+        "Hard":
+        {
+          "operation": ["/"],
+          "num_type": ["decimal"],
+          "noofsteps": 1
+        }
+      },
+      "Mixed Operation of Decimals": {
+        "Description": "Solve the following using BODMAS rules.",
+        "Easy": {
+          "operation": [
+            "+",
+            "-",
+            "*",
+            "/"
+          ],
+          "num_type": [
+            "decimal"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+",
+            "-",
+            "*",
+            "/"
+          ],
+          "num_type": [
+            "decimal"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+",
+            "-",
+            "*",
+            "/"
+          ],
+          "num_type": [
+            "decimal"
+          ],
+          "noofsteps": 3
+        }
+      }
+    },
+
+    "Fractions":
+    {
+      "Addition of Fractions": {
+        "Description": "Solve the following.",
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "fraction"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "fraction"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "fraction"
+          ],
+          "noofsteps": 4
+        }
+      },
+        "Subtraction of Fractions": {
+          "Description": "Solve the following.",
+          "Easy": {
+            "operation": [
+              "-"
+            ],
+            "num_type": [
+              "fraction"
+            ],
+            "noofsteps": 1
+          },
+          "Medium": {
+            "operation": [
+              "-"
+            ],
+            "num_type": [
+              "fraction"
+            ],
+            "noofsteps": 1
+          },
+          "Hard": {
+            "operation": [
+              "-"
+            ],
+            "num_type": [
+              "fraction"
+            ],
+            "noofsteps": 1
+          }
+        },
+
+        "Multiplication of Fractions": {
+          "Description": "Solve the following.",
+          "Easy": {
+            "operation": [
+              "*"
+            ],
+            "num_type": [
+              "fraction"
+            ],
+            "noofsteps": 1
+          },
+          "Medium": {
+            "operation": [
+              "*"
+            ],
+            "num_type": [
+              "fraction"
+            ],
+            "noofsteps": 2
+          },
+          "Hard": {
+            "operation": [
+              "*"
+            ],
+            "num_type": [
+              "fraction"
+            ],
+            "noofsteps": 3
+          }
+        },
+        "Division of Fractions": {
+          "Description": "Solve the following.",
+          "Easy": {
+            "operation": [
+              "/"
+            ],
+            "num_type": [
+              "fraction"
+            ],
+            "noofsteps": 1
+          },
+          "Medium": {
+            "operation": [
+              "/"
+            ],
+            "num_type": [
+              "fraction"
+            ],
+            "noofsteps": 1
+          },
+          "Hard": {
+            "operation": [
+              "/"
+            ],
+            "num_type": [
+              "fraction"
+            ],
+            "noofsteps": 1
+          }
+        },
+      "Mixed Operation of Fractions": {
+        "Description": "Solve the following using BODMAS rules.",
+        "Easy": {
+          "operation": [
+            "+",
+            "-",
+            "*",
+            "/"
+          ],
+          "num_type": [
+            "fraction"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+",
+            "-",
+            "*",
+            "/"
+          ],
+          "num_type": [
+            "fraction"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+",
+            "-",
+            "*",
+            "/"
+          ],
+          "num_type": [
+            "fraction"
+          ],
+          "noofsteps": 3
+        }
+      }
+    },
+
+    "Numbers":
+    {
+      "Addition of Numbers": {
+        "Description": "Solve the following.",
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "number"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "number"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "number"
+          ],
+          "noofsteps": 4
+        }
+      },
+      "Subtraction of Numbers":
+      {
+        "Description": "Solve the following.",
+        "Easy":
+        {
+          "operation": ["-"],
+          "num_type": ["number"],
+          "noofsteps": 1,
+          "nonegativeanswer": true
+        },
+        "Medium":
+        {
+          "operation": ["-"],
+          "num_type": ["number"],
+          "noofsteps": 1
+        },
+        "Hard":
+        {
+          "operation": ["-"],
+          "num_type": ["number"],
+          "noofsteps": 1
+        }
+      },
+      "Multiplication of Numbers":
+      {
+        "Description": "Solve the following.",
+        "Easy":
+        {
+          "operation": ["*"],
+          "num_type": ["number"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["*"],
+          "num_type": ["number"],
+          "noofsteps": 1
+        },
+        "Hard":
+        {
+          "operation": ["*"],
+          "num_type": ["number"],
+          "noofsteps": 1
+        }
+      },
+      "Division of Numbers":
+      {
+        "Description": "Solve the following.",
+        "Easy":
+        {
+          "operation": ["/"],
+          "num_type": ["number"],
+          "noofsteps": 1
+        },
+        "Medium":
+        {
+          "operation": ["/"],
+          "num_type": ["number"],
+          "noofsteps": 1
+        },
+        "Hard":
+        {
+          "operation": ["/"],
+          "num_type": ["number"],
+          "noofsteps": 1
+        }
+      },
+      "Mixed Operation of Numbers":
+      {
+        "Description": "Solve the following using BODMAS rules.",
+        "Easy": {
+          "operation": [
+            "+",
+            "-",
+            "*",
+            "/"
+          ],
+          "num_type": [
+            "number"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+",
+            "-",
+            "*",
+            "/"
+          ],
+          "num_type": [
+            "number"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+",
+            "-",
+            "*",
+            "/",
+            "**"
+          ],
+          "num_type": [
+            "number"
+          ],
+          "noofsteps": 3
+        }
+      },
+
+      "Prime Factorization": {
+        "Description": "Factorize the following numbers into their prime factors.",
+        "Easy": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 2,
+          "max": 10
+        },
+        "Medium": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 3,
+          "max": 20
+        },
+        "Hard": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 4,
+          "max": 50
+        }
+      },
+
+      "LCM HCF": {
+        "Description": "Obtain the LCM and HCF of numbers a and b.",
+        "Easy": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 2,
+          "max": 20
+        },
+        "Medium": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 3,
+          "max": 50
+        },
+        "Hard": {
+          "operation": ["+"],
+          "num_type": ["number"],
+          "noofsteps": 4,
+          "max": 100
+        }
+      }
+    },
+
+    "Sequence and Series":
+    {
+      "Find Missing Terms in Arithmetic Series":
+
+      {
+        "Description": "Find the Missing Terms.",
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type":
+            "linear"
+          ,
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type":
+            "linear"
+          ,
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type":
+            "linear"
+          ,
+          "noofsteps": 4
+        }
+      },
+      "Find Missing Terms in Geometric Series":
+
+      {
+        "Description": "Find the Missing Terms.",
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type":
+            "geometric"
+          ,
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type":
+            "geometric"
+          ,
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type":
+            "geometric"
+          ,
+          "noofsteps": 4
+        }
+      },
+      "Find Missing Terms Quadratic":
+      {
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 4
+        }
+      },
+
+      "Find Nth Term": {
+        "Description": "Find the Nth Term.",
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type":
+            "linear"
+          ,
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+",
+            "-"
+          ],
+          "num_type":
+            "linear"
+          ,
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+",
+            "-"
+          ],
+          "num_type":
+            "linear"
+          ,
+          "noofsteps": 4
+        }
+      },
+        "Find Nth Term in Geometric Series":
+      {
+        "Description": "Find the Nth Term.",
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type":
+            "geometric"
+          ,
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": "geometric",
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": "geometric",
+          "noofsteps": 4
+        }
+      },
+
+       "Find Nth Term Quadratic":
+      {
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 4
+        }
+      }
+    },
+
+
+    "Percentages":
+    {
+      "Simple Interest":
+      {
+        "Description": "Fill in the missing entries.",
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "linear"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "linear"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "linear"
+          ],
+          "noofsteps": 4
+        }
+      },
+      "Compound Interest":
+      {
+        "Description": "Fill in the missing entries.",
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 4
+        }
+      },
+      "Profit Loss":
+      {
+        "Description": "Fill in the missing entries.",
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "linear"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "linear"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "linear"
+          ],
+          "noofsteps": 4
+        }
+      },
+
+       "Percentage Increase Decrease":
+      {
+        "Description": "Fill in the missing entries.",
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 4
+        }
+      },
+
+      "Find Missing Value":
+      {
+        "Description": "Fill in the missing entries.",
+        "Easy": {
+          "operation": [
+            "+"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 1
+        },
+        "Medium": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 2
+        },
+        "Hard": {
+          "operation": [
+            "+","-"
+          ],
+          "num_type": [
+            "quadratic"
+          ],
+          "noofsteps": 4
+        }
+      }
+    }
+
+
+  },
+  "Parameters":
+  {
+    "noofquestions": 20,
+    "noofworksheets": 1,
+    "Easy":
+    {
+      "number":
+      {
+        "min": 1,
+        "max": 10
+      },
+      "decimal": {
+        "precision": 2,
+        "min": 0,
+        "max": 10
+      },
+      "fraction":
+      {
+        "samedenominator": true,
+        "frac_type": ["proper"],
+        "min": 2,
+        "max": 20
+      },
+      "polynomial":
+      {
+        "variables": ["x","y"],
+        "degree": 1,
+        "leading_coeff": false,
+        "const_term": true,
+        "min_coeff": 1,
+        "max_coeff": 5
+      },
+      "surd":
+      {
+        "min": 1,
+        "max": 15
+      },
+       "complex":
+      {
+        "min": 0,
+        "max": 10
+      }
+    },
+    "Medium":
+    {
+      "polynomial":
+      {
+        "variables": ["x","y"],
+        "degree": 1,
+        "leading_coeff": true,
+        "const_term": true,
+        "min_coeff": -8,
+        "max_coeff": 8
+      },
+      "number":
+      {
+        "min": 2,
+        "max": 20
+      },
+      "decimal": {
+        "precision": 3,
+        "min": 0,
+        "max": 10
+      },
+      "fraction":
+      {
+        "samedenominator": true,
+        "frac_type": ["proper","improper"],
+        "min": 2,
+        "max": 100
+      },
+      "surd":
+      {
+        "min": 2,
+        "max": 30
+      },
+       "complex":
+      {
+        "min": 0,
+        "max": 100
+      }
+    },
+    "Hard":
+    {
+      "polynomial":
+      {
+        "variables": ["x","y","z"],
+        "degree": 3,
+        "leading_coeff": true,
+        "const_term": true,
+        "min_coeff": -10,
+        "max_coeff": 10
+      },
+      "number":
+      {
+        "min": 2,
+        "max": 20
+      },
+      "decimal":
+      {
+        "precision": 4,
+        "min": 0,
+        "max": 100
+      },
+      "fraction":
+      {
+        "samedenominator": true,
+        "frac_type": ["proper","improper"],
+        "min": 10,
+        "max": 200
+      },
+      "surd":
+      {
+        "min": 2,
+        "max": 100
+      },
+
+      "complex":
+      {
+        "min": -100,
+        "max": 100
+      }
+    }
+  }
+}

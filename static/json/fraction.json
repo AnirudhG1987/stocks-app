@@ -1,0 +1,6 @@
+{
+  "samedenominator": true,
+  "frac_type": ["proper","improper","mixed"],
+  "denom_min": 2,
+  "denom_max": 10
+}

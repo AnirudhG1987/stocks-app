@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Maring Calculator</title>
+</head>
+<body>
+        <form>
+                <label for="id_share">Shares:</label>
+        <input type="number" name="shares" required id="id_share">
+                <label for="id_stock">Stock:</label>
+        <input type="number" name="stock" required id="id_stock">
+        <label for="id_living">Living Amount:</label>
+        <input type="number" name="living" required id="id_living">
+            <label for="id_borrowing">Borrowing:</label>
+        <input type="number" name="borrowing" required id="id_borrowing">
+        <label for="id_inv_script">Stock Price Growth:</label>
+        <input type="text" name="growth" required id="id_inv_script">
+                <label for="id_liv_script">Living Growth Script:</label>
+        <input type="text" name="growth" required id="id_liv_script">
+        <label for="id_int_script">Interest Script:</label>
+        <input type="text" name="interest" required id="id_int_script">
+        <label for="id_margin_share">Margin Shares:</label>
+        <input type="number" name="shares" required id="id_margin_share">
+        </form>
+        <input id="ci_submit" type="submit" name="Calculate" value="Calculate" />
+
+        <td><div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div></td>
+
+        <td><div id="livchartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div></td>
+
+
+
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.stock.min.js"></script>
+
+        <script src="{% static 'js/margin.js' %}"></script>
+        <script src="{% static 'js/functions.js' %}"></script>
+
+
+
+</body>
+</html>

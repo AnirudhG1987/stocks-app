@@ -1,0 +1,54 @@
+{
+  "Grade 5":
+  {
+    "Fractions":
+    {
+      "number_type": ["fraction"],
+      "Addition of Fractions":
+      {
+        "operands": ["+"],
+        "Easy":
+        {
+          "low": 1,
+          "high": 10,
+          "steps": 2,
+          "denominator": true
+        },
+        "Medium":
+        {
+          "low": 1,
+          "high": 100,
+          "steps": 3,
+          "denominator": true
+        },
+        "Medium":
+        {
+          "low": 10,
+          "high": 100,
+          "steps": 4,
+          "denominator": false
+        }
+      },
+      "Subtraction of Fractions":
+      {
+
+      }
+    },
+    "Decimals":
+    {
+
+    },
+    "Percentages":
+    {
+
+    }
+  },
+  "Grade 6":
+  {
+
+  },
+  "Grade 7":
+  {
+
+  }
+}
