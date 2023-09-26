@@ -17,6 +17,8 @@ The algorithm assumes that empty cells are denoted with a 0.
 import fileinput
 import time
 
+
+
 def print_sudoku(s):
     """
     Formats the Sudoku puzzle currently in a 2D list into
