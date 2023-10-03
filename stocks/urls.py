@@ -27,5 +27,6 @@ urlpatterns = [
     path('', include('home.urls')),
     path('margin/', include('margin_app.urls')),
     path('sudoku/', include('sudoku.urls')),
+    path('wordle/', include('wordle.urls'))
 
 ]
