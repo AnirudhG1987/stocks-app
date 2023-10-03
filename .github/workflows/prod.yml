@@ -28,5 +28,5 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           key: ${{ secrets.SSH_KEYS }}
           username: ${{ secrets.SERVER_USERNAME }}
-          script: cd ${{ secrets.PROJECT_PATH }} && git pull origin main && source venv/bin/activate && pip3 install -r requirements.txt && sudo systemctl daemon-reload && sudo systemctl restart gunicorn && sudo service restart nginx
+          script: cd ${{ secrets.PROJECT_PATH }} && git pull origin main && source venv/bin/activate && pip3 install -r requirements.txt && sudo systemctl daemon-reload && sudo systemctl restart gunicorn && sudo service nginx restart
  
