@@ -1,0 +1,32 @@
+name: CI-Prod Server
+env:
+  DOCKER_BUILDKIT: 1
+  COMPOSE_DOCKER_CLI_BUILD: 1
+
+on:
+  pull_request:
+    branches: [ "main" ]
+    paths-ignore: [ "docs/**" ]
+
+  push:
+    branches: [ "main" ]
+    paths-ignore: [ "docs/**" ]
+
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  deploy_dev:
+    if: github.ref == 'refs/heads/main'
+    runs-on: [ ubuntu-latest ]
+    steps:
+      - uses: actions/checkout@v1
+      - name: Push to dev server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          key: ${{ secrets.SSH_KEYS }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          script: cd ${{ secrets.PROJECT_PATH_DEV }} && git pull origin main && source venv/bin/activate && pip3 install -r requirements.txt && sudo systemctl daemon-reload && sudo service restart gunicorn && sudo service restart nginx
+ 
