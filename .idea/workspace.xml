@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku/Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/Generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku/Sudokus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/Sudokus.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku/pySudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/pySudoku.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sudoku/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sudoku/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +34,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/anirudhgaddamanugu/Desktop/PycharmProjects/Stocks/wordle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/anirudhgaddamanugu/Desktop/PycharmProjects/Stocks/wordle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wordle" />
@@ -329,7 +321,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695716508657</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Added C_living with variable functionality">
+      <created>1696329470679</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1696329470679</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Sudoku">
+      <created>1696329801385</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1696329801385</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -338,6 +344,7 @@
     <MESSAGE value="Multiple Stocks done" />
     <MESSAGE value="Added CI" />
     <MESSAGE value="Added C_living with variable functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added C_living with variable functionality" />
+    <MESSAGE value="Sudoku" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sudoku" />
   </component>
 </project>
