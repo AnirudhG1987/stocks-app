@@ -60,8 +60,9 @@ INSTALLED_APPS = [
     'tictactoe',
     'worksheet',
     'home',
-    'margin_app'
-    #'sudoku',
+    'margin_app',
+    'sudoku',
+    'wordle'
 ]
 
 MIDDLEWARE = [

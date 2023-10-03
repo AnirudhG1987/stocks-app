@@ -26,6 +26,6 @@ urlpatterns = [
     path('worksheet/', include('worksheet.urls')),
     path('', include('home.urls')),
     path('margin/', include('margin_app.urls')),
-    #path('sudoku/', include('sudoku.urls')),
+    path('sudoku/', include('sudoku.urls')),
 
 ]

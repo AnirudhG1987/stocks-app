@@ -17,7 +17,7 @@ The algorithm assumes that empty cells are denoted with a 0.
 import fileinput
 import time
 
-
+from random import choice
 
 def print_sudoku(s):
     """
@@ -111,6 +111,32 @@ def DFS_solve(s, row, col):
         return False
 
     return DFS_solve(s, row, col+1)
+
+def generate_sudoku():
+    with open('sudoku/Sudokus.txt', 'r') as file:
+        data = file.readlines()
+    puzzle = choice(data)
+    print(puzzle)
+    file.close()
+    return puzzle
+
+#generate_sudoku()
+
+def  solve_puzzle(data):
+    s = []
+    for i in range(9):
+        l=[]
+        for j in range(9):
+            l.append(int(data[i*9+j]))
+        s.append(l)
+   #print(s)
+    initial_try(s)
+    for line in s:
+        if 0 in line:
+            DFS_solve(s, 0, 0)
+            break
+    solution = ''.join(str(elem) for row in s for elem in row)
+    return solution
 
 def main():
     start = time.time()

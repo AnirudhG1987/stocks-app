@@ -1,35 +1,147 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Puzzle</title>
+    <style>
 
-  <style>
-    input {height:100px;width:100px;font-size:48px}
-  </style>
-
-  <body>
-
-    <table >
-         {% for row in board %}
-      <tr>
-          {% for item in row %}
-           <th>
-             <form class="" action="" method="POST">
-                {% csrf_token %}
-                <input class="boardbutton" type="hidden" name="id" value= {{item.loc}} />
-                <input type="submit" value= {{item.value}} />
-            </form>
-
-            </th>
-            {% endfor %}
-
-      </tr>
-      {% endfor %}
-
+        table {
+            width: 270px;
+            height: 270px;
+            border-collapse: collapse;
+        }
+        td {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border: 2px solid #ddd; /* Light border for individual cells */
+        }
+        input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <table id="sudokuGrid">
+        <!-- The table rows and cells will be added here by JavaScript -->
     </table>
+    <button onclick="solveSudoku()">Solve</button>
+    <button onclick="clearPuzzle()">Clear</button>
+    <button onclick="generatePuzzle()">Generate</button>
 
-  </body>
+
+    <script>
+        // Getting reference to the sudokuGrid
+        const grid = document.getElementById('sudokuGrid');
+
+        // Creating 9 rows with 9 cells each
+        for (let i = 0; i < 9; i++) {
+            const row = document.createElement('tr');
+            for (let j = 0; j < 9; j++) {
+                const cell = document.createElement('td');
+                // Add thicker borders for the 3x3 grid
+                if (i % 3 === 2) cell.style.borderBottom = '3px solid black';
+                if (j % 3 === 2) cell.style.borderRight = '3px solid black';
+                if (i === 0) cell.style.borderTop = '3px solid black';
+                if (j === 0) cell.style.borderLeft = '3px solid black';
+
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.maxLength = '1';
+                input.oninput = function () {
+                    this.value = this.value.replace(/[^1-9]/g, ''); // only allow numbers 1-9
+                    if (this.value && j < 8) {
+                       row.cells[j + 1].querySelector('input').focus();
+                    }
+                };
+                input.addEventListener('keydown', function (e) {
+                switch (e.key) {
+                    case 'ArrowLeft':
+                        if (j > 0) row.cells[j - 1].querySelector('input').focus();
+                        break;
+                    case 'ArrowRight':
+                        if (j < 8) row.cells[j + 1].querySelector('input').focus();
+                        break;
+                    case 'ArrowUp':
+                        if (i > 0) grid.rows[i - 1].cells[j].querySelector('input').focus();
+                        break;
+                    case 'ArrowDown':
+                        if (i < 8) grid.rows[i + 1].cells[j].querySelector('input').focus();
+                        break;
+                    }
+                });
+                cell.appendChild(input);
+                row.appendChild(cell);
+            }
+            grid.appendChild(row);
+        }
+
+        function solveSudoku() {
+            let data = '';
+            // Loop through each row
+            for (let i = 0; i < grid.rows.length; i++) {
+                // Loop through each cell in the row
+                for (let j = 0; j < grid.rows[i].cells.length; j++) {
+                    const input = grid.rows[i].cells[j].querySelector('input');
+                    const value = input.value || '0'; // use '0' if the cell is empty
+                    data += value;
+                }
+            }
+            // Send the data to the backend
+            fetch('solve/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ data })
+           })
+           .then(response => response.json())
+        .then(responseData => {
+            const solvedData = responseData.data;
+            // Populate the grid with the solved puzzle data
+            for (let i = 0; i < grid.rows.length; i++) {
+                for (let j = 0; j < grid.rows[i].cells.length; j++) {
+                    const input = grid.rows[i].cells[j].querySelector('input');
+                    input.value = solvedData[i * 9 + j]; // Set the value of each cell to the corresponding character in the solvedData string.
+                }
+            }
+            });
+        }
+
+        function clearPuzzle() {
+            for (let i = 0; i < grid.rows.length; i++) {
+                for (let j = 0; j < grid.rows[i].cells.length; j++) {
+                    const input = grid.rows[i].cells[j].querySelector('input');
+                    input.value = '';  // Clear the value of each cell
+                }
+            }
+        }
+
+        function generatePuzzle() {
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", 'generate/', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    const responseData = JSON.parse(xhr.responseText);
+                    const generatedData = responseData.data;
+                    for (let i = 0; i < grid.rows.length; i++) {
+                        for (let j = 0; j < grid.rows[i].cells.length; j++) {
+                            const input = grid.rows[i].cells[j].querySelector('input');
+                            const num = generatedData[i * 9 + j];
+                            input.value = num === '0' ? '' : num; // If the number is zero, leave the cell empty
+                        }
+                    }
+                }
+            }
+            xhr.send();
+        }
+
+
+    </script>
+</body>
 </html>

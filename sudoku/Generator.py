@@ -14,7 +14,7 @@ but boards where you cannot remove any more numbers without destroying the uniqu
 of the solution.
 """
 
-import pySudoku
+#import sudoku.pySudoku as pySudoku
 import random
 import time
 
@@ -163,6 +163,7 @@ def reduce_sudoku(s, difficulty):
                 break
 
     return
+
 
 def main():
     f = open("SudokuPuzzles.txt", "w")
