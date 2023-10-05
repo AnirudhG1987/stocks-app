@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordle</title>
+
     <link rel="stylesheet" href="{% static 'css/wordle.css' %}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
     <link
@@ -14,17 +15,15 @@
   />
 </head>
 <body>
-    <h1> Wordle Clone </h1>
+    <h1> Wordle Solver </h1>
+    <h4> Enter your guess. Select the squares which are green and yellow by clicking on the colors and selecting the box. </h4>
+    <h4> Letters which are grey are to be left alone. Press Enter to get the  best guess and words suggestion. Repeat</h4>
+
+    <button onclick="refreshPage()">Refresh</button>
 
     <div id="game-board">
-
-
     </div>
-    <script>
-
-
-    </script>
-
+    <!--
     <div id="keyboard-cont">
         <div class="first-row">
             <button class="keyboard-button">q</button>
@@ -61,12 +60,22 @@
             <button class="keyboard-button">Enter</button>
         </div>
     </div>
+    -->
+
+    <div>
+        <label >NEXT GUESS:</label>
+        <label id="next-word"></label>
+    </div>
+    <label>WORD SUGGESTIONS:</label>
+    <div id="word-suggestions">
+        <label id="words"></label>
+    </div>
 
 <script
 src="https://code.jquery.com/jquery-3.6.0.min.js"
 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
+<script src="{% static 'js/wordle.js' %}"></script>
 </body>
 </html>

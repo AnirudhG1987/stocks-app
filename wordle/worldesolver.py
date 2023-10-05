@@ -34,7 +34,7 @@ def common_position(top_char, array):
 
 def best_guess(array):
     dic_chars = common_letters(array)
-    print(dic_chars)
+    #print(dic_chars)
     #print(common_position(top_char,array_dummy))
     best_word = array[0]
     word_value = 0
@@ -75,7 +75,7 @@ def remove_green(dict_string,array):
         for key in dict_green.keys():
             if array[i][key]==dict_green[key]:
                 array[i] = array[i][:key]+array[i][key+1:]
-    print(array)
+    #print(array)
     return array
 
 
@@ -97,34 +97,54 @@ def yellow_boxes_func(dict_string,array):
 def grey_boxes_func(char_string,array):
     for c in char_string.split(','):
         array_new = np.array([])
+        #print("this is inside grey")
+        #print(array)
         for word in array:
             if c not in word:
                 array_new = np.append(array_new,word)
         array=array_new
     return array
 
-def wordlesolver():
-    df = pd.read_excel("wordle/wordsfive.xlsx")
-    array = np.asarray(df)
-    array = array.reshape(5756)[:-1]
+def wordlesolver(words_array,green_string,yellow_string,grey_string):
+    if len(words_array)==0:
+        df = pd.read_excel("wordle/wordsfive.xlsx")
+        array = np.asarray(df)
+        words_array = array.reshape(5756)[:-1]
+        #print("inside here")
+        #print(type(words_array))
+        #print(words_array.shape)
+    elif len(words_array)==1:
+        return words_array[0],words_array
+    else:
+        #print("before")
+        #print(type(words_array))
+        words_array = np.array(words_array)
+        #print(words_array)
+        #print(words_array.shape)
+        words_array = np.reshape(words_array,len(words_array))
+        #print(type(words_array))
+        ##print(words_array.shape)
+    #green_string = input("Green Characters:")
+    if len(green_string)!=0:
+        words_array  = green_boxes_func(green_string,words_array)
+        #print(array)
+    #yellow_string = input("Yellow Characters:")
+    if len(yellow_string) != 0:
+        words_array = yellow_boxes_func(yellow_string, words_array)
+        #print(array)
 
-    while len(array)!=1:
-        green_string = input("Green Characters:")
-        if len(green_string)!=0:
-            array  = green_boxes_func(green_string,array)
-            #print(array)
-        yellow_string = input("Yellow Characters:")
-        if len(yellow_string) != 0:
-            array = yellow_boxes_func(yellow_string, array)
-            #print(array)
+    #grey_string = input("Grey Characters:")
+    if len(grey_string) != 0:
+        words_array = grey_boxes_func(grey_string, words_array)
+    #print(array)
+    #array_dummy = np.copy(words_array)
+    #if len(green_string)!=0:
+    #    array_dummy = remove_green(green_string,array_dummy)
+    #print("possible words")
+    #print(words_array)
+    if len(words_array)==0:
+        return None,words_array
+    guess = best_guess(words_array)
+    return guess, words_array
 
-        grey_string = input("Grey Characters:")
-        if len(grey_string) != 0:
-            array = grey_boxes_func(grey_string, array)
-        print(array)
-        array_dummy = np.copy(array)
-        #if len(green_string)!=0:
-        #    array_dummy = remove_green(green_string,array_dummy)
-        print(best_guess(array_dummy))
-
-wordlesolver()
+#wordlesolver()
