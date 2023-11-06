@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Upload Example</title>
+<script>
+function handleFileUpload(event) {
+    const fileInput = event.target;
+    const file = fileInput.files[0];
+
+    if (file) {
+        const downloadLink = document.createElement('a');
+        downloadLink.href = URL.createObjectURL(file);
+        downloadLink.download = file.name;
+        downloadLink.textContent = `Download ${file.name}`;
+        downloadLink.style.display = 'block'; // To ensure it's on a new line
+
+        const container = document.getElementById('file-upload-container');
+        // Remove any existing download links before adding a new one
+        const existingLink = container.querySelector('a');
+        if (existingLink) {
+            container.removeChild(existingLink);
+        }
+        container.appendChild(downloadLink);
+    }
+}
+</script>
+</head>
+<body>
+
+<div id="file-upload-container">
+    <input type="file" id="fileInput" onchange="handleFileUpload(event)">
+</div>
+
+</body>
+</html>

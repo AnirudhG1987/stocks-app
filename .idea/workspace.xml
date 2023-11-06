@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="Sudoku">
+    <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/wordle/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wordle/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordle/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/wordle/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordle/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/wordle/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordle/worldesolver.py" beforeDir="false" afterPath="$PROJECT_DIR$/wordle/worldesolver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Grade 5 Coordinate Geometry Midpoint of two points Easy 1.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Grade 5 Coordinate Geometry Slope between two Points Easy 1.tex" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,7 +358,21 @@
       <option name="project" value="LOCAL" />
       <updated>1696348933058</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="wordle">
+      <created>1696483010582</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1696483010582</updated>
+    </task>
+    <task id="LOCAL-00043" summary="wordle">
+      <created>1696483238092</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1696483238092</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -370,6 +382,7 @@
     <MESSAGE value="Added CI" />
     <MESSAGE value="Added C_living with variable functionality" />
     <MESSAGE value="Sudoku" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sudoku" />
+    <MESSAGE value="wordle" />
+    <option name="LAST_COMMIT_MESSAGE" value="wordle" />
   </component>
 </project>
