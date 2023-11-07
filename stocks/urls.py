@@ -29,6 +29,7 @@ urlpatterns = [
     path('', include('home.urls')),
     path('margin/', include('margin_app.urls')),
     path('sudoku/', include('sudoku.urls')),
-    path('wordle/', include('wordle.urls'))
+    path('wordle/', include('wordle.urls')),
+    path('test/',include('test_upload_download.urls'))
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

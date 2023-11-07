@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/Grade 5 Coordinate Geometry Midpoint of two points Easy 1.tex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/Grade 5 Coordinate Geometry Slope between two Points Easy 1.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/upload_download.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload_download/upload_download.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -52,11 +56,11 @@
       <recent name="$PROJECT_DIR$/static/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/upload_download" />
       <recent name="$PROJECT_DIR$/margin_app" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/static/pdf" />
       <recent name="$PROJECT_DIR$/static/img" />
-      <recent name="$PROJECT_DIR$/static/json" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -372,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696483238092</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="upload download html">
+      <created>1699265353531</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1699265353531</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -383,6 +394,7 @@
     <MESSAGE value="Added C_living with variable functionality" />
     <MESSAGE value="Sudoku" />
     <MESSAGE value="wordle" />
-    <option name="LAST_COMMIT_MESSAGE" value="wordle" />
+    <MESSAGE value="upload download html" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload download html" />
   </component>
 </project>

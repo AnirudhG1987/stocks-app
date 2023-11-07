@@ -64,7 +64,8 @@ INSTALLED_APPS = [
     'home',
     'margin_app',
     'sudoku',
-    'wordle'
+    'wordle',
+    'test_upload_download'
 ]
 
 MIDDLEWARE = [
