@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="">
+    <list default="true" id="c82a6c39-507c-4f44-8200-7f1aed1ba19e" name="Default Changelist" comment="upload download html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Grade 5 Coordinate Geometry Midpoint of two points Easy 1.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Grade 5 Coordinate Geometry Slope between two Points Easy 1.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stocks/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/upload_download.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload_download/upload_download.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -383,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699265353531</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="upload download html">
+      <created>1699343169899</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1699343169899</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
